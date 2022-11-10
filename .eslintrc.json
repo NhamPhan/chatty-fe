@@ -1,0 +1,113 @@
+{
+  "root": true,
+  "globals": {
+    "window": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "mdx/code-blocks": true,
+    "linkComponents": [
+      // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
+      {
+        "name": "Link",
+        "linkAttribute": "to"
+      },
+      {
+        "name": "NavLink",
+        "linkAttribute": "to"
+      },
+      {
+        "name": "A",
+        "linkAttribute": "to"
+      }
+    ]
+  },
+  "plugins": [
+    "jsx-a11y",
+    "react",
+    "react-hooks",
+    "use-storeon",
+    "mdx",
+    "unicorn",
+    "vest",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:mdx/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "warn",
+    "vest/exclude-before-test": "error",
+    "vest/hook-scope": "error",
+    "use-storeon/no-dupe-use-storeon": "error",
+    "use-storeon/no-unused-watched-vars": "error",
+    "use-storeon/no-unwatched-vars": "error",
+    "react/button-has-type": "warn",
+    // prettier-ignore
+    "react/no-multi-comp": [
+      "warn",
+      {
+        "ignoreStateless": true
+      }
+    ],
+    "react/void-dom-elements-no-children": "error",
+    // prettier-ignore
+    "react/jsx-no-target-blank": [
+      "warn",
+      {
+        "allowReferrer": true,
+        "enforceDynamicLinks": "always"
+        //"warnOnSpreadAttributes": <warn>
+      }
+    ],
+    "react/jsx-no-script-url": "error",
+    // prettier-ignore
+    "unicorn/no-keyword-prefix": [
+      "warn",
+      {
+        "checkProperties": true,
+        "onlyCamelCase": false
+      }
+    ],
+    "unicorn/no-unused-properties": "warn",
+    "unicorn/no-unsafe-regex": "error",
+    "unicorn/custom-error-definition": "error",
+    // typescript handles this for us
+    "unicorn/no-empty-file": "off",
+    // prettier-ignore
+    "unicorn/filename-case": [
+      "warn",
+      {
+        "cases": {
+          "pascalCase": true,
+          "kebabCase": true
+        }
+      }
+    ],
+    // prettier-ignore
+    "unicorn/prevent-abbreviations": [
+      "off",
+      {
+        "replacements": {
+          "props": false
+        }
+      }
+    ],
+    "unicorn/no-null": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": 0,
+    "react/display-name": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@api": ["./api"],
+      "@api/*": ["./api/*"],
+      "@assets": ["./assets"],
+      "@assets/*": ["./assets/*"],
+      "@components": ["./components"],
+      "@components/*": ["./components/*"],
+      "@configs": ["./configs"],
+      "@configs/*": ["./configs/*"],
+      "@hooks": ["./hooks"],
+      "@hooks/*": ["./hooks/*"],
+      "@layouts": ["./layouts"],
+      "@layouts/*": ["./layouts/*"],
+      "@pages": ["./pages"],
+      "@pages/*": ["./pages/*"],
+      "@routes": ["./routes"],
+      "@routes/*": ["./routes/*"],
+      "@sections": ["./sections"],
+      "@sections/*": ["./sections/*"],
+      "@service": ["./service"],
+      "@service/*": ["./service/*"],
+      "@store": ["./store"],
+      "@store/*": ["./store/*"],
+      "@utils": ["./utils"],
+      "@utils/*": ["./utils/*"]
+    }
+  },
+
+  "exclude": [
+    "node_modules"
+  ]
+}

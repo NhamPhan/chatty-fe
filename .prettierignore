@@ -1,0 +1,7 @@
+**/node_modules/
+/dist/
+/analysis/
+/coverage/
+
+Root.jsx
+main.jsx
